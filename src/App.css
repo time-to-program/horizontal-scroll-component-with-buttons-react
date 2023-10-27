@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* All CSS styles for the component are defined in this file */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #eeeeee;
 }
 
-.App-link {
-  color: #61dafb;
+.content-box {
+  width: 1800px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.action-btns button {
+  font-size: 15px;
+  font-weight: 500;
+  color: #002d36;
+  background-color: #99c6cf;
+  border-radius: 6px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.action-btns button:hover {
+  color: #ffffff;
+  background-color: #002d36;
 }
